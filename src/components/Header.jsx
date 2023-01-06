@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
-import { FiPhoneCall } from "react-icons/fi";
-import { BiMenu } from "react-icons/bi";
 import { VscClose } from "react-icons/vsc";
 
-const Header = ({Aos}) => {
+import { BiMenu } from "react-icons/bi";
+
+const Header = ({Aos, FiPhoneCall}) => {
   const [clicked, setClicked] = useState(false);
 
   
@@ -13,7 +13,7 @@ const Header = ({Aos}) => {
     setClicked(!clicked);
   };
 
-  
+
 
   return (
     <div data-aos="fade-zoom-in" data-aos-duration="200" data-aos-easing="ease-in-back" data-aos-delay="200" data-aos-offset="0" className="flex pl-8  pt-7 md:pl-0 md:pr-0 justify-between items-center md:mb-20 w-full">
@@ -56,7 +56,7 @@ const Header = ({Aos}) => {
               class="text-xl tracking-wide p-3 rounded transition
                       ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
             >
-              Home
+              Inicio
             </a>
           </li>
           <li class="mx-4 my-8 md:my-0">
@@ -65,7 +65,7 @@ const Header = ({Aos}) => {
               class="text-xl tracking-wide p-3 rounded transition
                       ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300"
             >
-              Obras
+              Proyectos
             </a>
           </li>
           <li class="mx-4 my-8 md:my-0">
