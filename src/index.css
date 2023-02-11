@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.contactoDiv {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .contactoDiv {
+    grid-template-columns: 22% 51.7% 22%;
+    grid-template-rows: none;
+  }
+}
+
+.quienes_somos_grid {
+  grid-template-rows: 30% 70%;
+  grid-template-columns: 30% 70%;
+}
+
+@media (max-width: 768px) {
+  .quienes_somos_grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 23% 77%;
+  }
+}
+
+.civiles_mecanicas_grid {
+  grid-template-columns: 1fr;
+  grid-template-rows: 23% 77%;
+}
