@@ -30,7 +30,7 @@ const Index = () => {
           <br /> de tus Sueños se puede hacer Realidad
         </h2>
 
-        <Link to="/proyectos" data-aos="flip-down" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" className="p-3 md:p-5 bg-orange-500 rounded  text-2xl lg: shadow-lg flex gap-x-4">
+        <Link to="/proyectos" data-aos="flip-down" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" className="p-3 md:p-5 bg-orange-500 rounded text-2xl lg: shadow-lg flex gap-x-4 hover:scale-110 transition">
           Ver Proyectos <BsFillCaretDownFill className="text-4xl"></BsFillCaretDownFill>
         </Link>
       </div>

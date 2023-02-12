@@ -33,7 +33,7 @@ const QuienesSomos = () => {
       <div className="w-full md:w-3/4 text-center ">
         <button
           onClick={handleNosotros}
-          className="rounded-lg bg-orange-500 uppercase w-full text-xl md:text-3xl font-mono h-full py-7 flex items-center justify-around md:justify-center md:gap-x-10 mb-10"
+          className="hover:scale-110 transition rounded-lg bg-orange-500 uppercase w-full text-xl md:text-3xl font-mono h-full py-7 flex items-center justify-around md:justify-center md:gap-x-10 mb-10"
         >
           ¿Por Qué Nosotros?{" "}
           {nosotros ? (
@@ -61,7 +61,7 @@ const QuienesSomos = () => {
       <div className="w-full md:w-3/4  text-center ">
         <button
           onClick={handleConstruimos}
-          className="bg-orange-500 uppercase w-full text-xl md:text-3xl font-mono h-full py-7 flex items-center justify-around md:justify-center md:gap-x-10 rounded-lg mb-10" 
+          className="hover:scale-110 transition bg-orange-500 uppercase w-full text-xl md:text-3xl font-mono h-full py-7 flex items-center justify-around md:justify-center md:gap-x-10 rounded-lg mb-10" 
         >
           ¿Qué Construimos?{" "}
           {construimos ? (

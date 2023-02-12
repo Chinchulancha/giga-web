@@ -12,9 +12,8 @@ const Header = ({ Aos, FiPhoneCall }) => {
 
   const location = useLocation();
 
-
   const handleClick = () => {
-    if(window.innerWidth < 1000){
+    if (window.innerWidth < 1000) {
       setClicked(!clicked);
     }
   };
@@ -22,7 +21,6 @@ const Header = ({ Aos, FiPhoneCall }) => {
   useEffect(() => {
     Aos.init();
   }, []);
-
 
   return (
     <div
@@ -34,7 +32,8 @@ const Header = ({ Aos, FiPhoneCall }) => {
       className="flex pl-8 pt-3 md:pt-7 md:pl-0 md:pr-0 justify-between items-center md:mb-20 w-full"
     >
       <h1 className="text-5xl ">
-        <img src={Logo} alt="" />
+        <Link to='/'><img src={Logo} alt="" /></Link>
+        
       </h1>
 
       <button className="block ml-24 lg:hidden">
@@ -42,24 +41,6 @@ const Header = ({ Aos, FiPhoneCall }) => {
       </button>
 
       <nav className="shadow-lg  md:flex">
-        {/* <ul className="md:flex md:gap-x-10 bg-slate-800 md:py-5 md:px-7 rounded ">
-                    <li className="text-lg"><a href="#" className="tracking-wid  p-3 rounded transition
-                      ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">Home</a></li>
-
-                    <li className=" text-lg"><a href="#" className="tracking-wide p-3 rounded transition
-                      ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">Obras</a></li>
-
-                    <li className=" text-lg"><a href="#" className="tracking-wide p-3 rounded transition
-                      ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">Quienes Somos</a></li>
-
-                    <li className="text-lg ">
-                        <a href="#" className="tracking-wide p-3 rounded transition
-                        ease-in-out bg-orange-500 duration-300">Contacto</a> 
-                    </li>
-
-                    
-                </ul> */}
-
         <ul
           class={`md:flex md:items-center  md:z-auto md:static absolute z-1 bg-slate-600 md:bg-slate-800 text-center md:text-start md:py-5 md:px-7 w-full left-0 md:w-auto ${
             clicked ? "top-0" : "top-[-400px]"
@@ -131,7 +112,6 @@ const Header = ({ Aos, FiPhoneCall }) => {
             {" "}
             +54 9 341-692-4953
           </p>
-
         </div>
       </nav>
     </div>
