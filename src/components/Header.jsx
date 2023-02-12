@@ -32,11 +32,10 @@ const Header = ({ Aos, FiPhoneCall }) => {
       className="flex pl-8 pt-3 md:pt-7 md:pl-0 md:pr-0 justify-between items-center md:mb-20 w-full"
     >
       <h1 className="text-5xl ">
-        <Link to='/'><img src={Logo} alt="" /></Link>
-        
+        <Link aria-label="Logo GIGA, volver a la pagina de inicio" to='/'><img src={Logo} alt="" /></Link>
       </h1>
 
-      <button className="block ml-24 lg:hidden">
+      <button aria-label="Boton para dispositivos moviles, abre el menu de navegacion" className="block ml-24 lg:hidden">
         <BiMenu className="text-5xl" onClick={handleClick}></BiMenu>
       </button>
 
