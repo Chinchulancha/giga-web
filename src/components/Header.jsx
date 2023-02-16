@@ -32,16 +32,16 @@ const Header = ({ Aos, FiPhoneCall }) => {
       className="flex pl-8 pt-3 md:pt-7 md:pl-0 md:pr-0 justify-between items-center md:mb-20 w-full"
     >
       <h1 className="text-5xl ">
-        <Link aria-label="Logo GIGA, volver a la pagina de inicio" to='/'><img src={Logo} alt="" /></Link>
+        <Link aria-label="Logo GIGA, volver a la pagina de inicio" to='/'><img src={Logo} alt="GIGA CONSTRUCTORA ROSARIO" /></Link>
       </h1>
 
       <button aria-label="Boton para dispositivos moviles, abre el menu de navegacion" className="block ml-24 lg:hidden">
         <BiMenu className="text-5xl" onClick={handleClick}></BiMenu>
       </button>
 
-      <nav className="shadow-lg  md:flex">
+      <nav className="shadow-lg md:flex">
         <ul
-          class={`md:flex md:items-center  md:z-auto md:static absolute z-1 bg-slate-600 md:bg-slate-800 text-center md:text-start md:py-5 md:px-7 w-full left-0 md:w-auto ${
+          class={`md:flex md:items-center  md:z-auto md:static absolute z-50  bg-slate-600 md:bg-slate-800 text-center md:text-start md:py-5 md:px-7 w-full left-0 md:w-auto ${
             clicked ? "top-0" : "top-[-400px]"
           } transition-all ease-in duration-500 rounded py-12`}
         >
