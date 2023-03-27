@@ -18,7 +18,7 @@ const SliderC = () => {
   };
 
   return (
-    <div className='mb-40'> 
+    <div className='mb-20 md:mb-40'> 
         <h2 className='uppercase text-4xl tracking-wider text-orange-500 w-fit font-mono bg-slate-800 py-5 px-10 rounded-lg'>
           <span className='w-full'>Obras</span> {''}
           <span className='w-full'>Destacadas</span>
@@ -26,12 +26,12 @@ const SliderC = () => {
         <Slider {...settings} className="mt-10">
           
           <div>
-            <img src={a} alt="" className='w-full transition duration-300 imgSlider hover:opacity-40 cursor-pointer'/>
+            <img src={a} alt="" className='w-full  transition duration-300 imgSlider hover:opacity-40 cursor-pointer'/>
             <h3 className='textSlider absolute top-0 pl-5 pt-5 font-mono text-3xl'>Imagen 1</h3>
           </div>
           <div>
             <img src={b} alt="" className='w-full transition duration-300 imgSlider hover:opacity-40 cursor-pointer'/>
-            <h3 className='textSlider absolute top-0 pl-5 pt-5 font-mono text-3xl w-32'>Imagen 2</h3>
+            <h3 className='textSlider absolute top-0 pl-5 pt-5 font-mono text-3xl'>Imagen 2</h3>
           </div>
           <div>
             <img src={c} alt="" className='w-full transition duration-300 imgSlider hover:opacity-40 cursor-pointer'/>

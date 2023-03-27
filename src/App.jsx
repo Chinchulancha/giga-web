@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
-import { BrowserRouter } from 'react-router-dom';
-import Header from './components/Header'
-import Main from './components/Main'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Aos from "aos";
-import { FiPhoneCall } from "react-icons/fi";
+import Layout from './components/Layout';
+import Index from './pages/Index'
+import Proyectos from './pages/Proyectos';
+import QuienesSomos from './pages/QuienesSomos';
+import Contacto from './pages/Contacto';
 
 function App() {
   useEffect(() => {
@@ -12,17 +15,16 @@ function App() {
 
   return (
     <BrowserRouter>
-    <div data-aos="fade-down" className="lg:container lg:mx-auto text-white sm:w-full sm:h-full">
-      <Header
-        Aos = {Aos}
-        FiPhoneCall = {FiPhoneCall}
-      />
-      <Main
-        Aos={Aos}
-        FiPhoneCall = {FiPhoneCall}
-      />
-    </div>
-    </BrowserRouter>
+    <Layout/>
+
+    <Routes>
+      <Route path="/" element={<Index />} />
+
+      <Route path="/proyectos" element={<Proyectos/>} />
+      <Route path="/quienes-somos" element={<QuienesSomos/>} />
+      <Route path="/contacto" element={<Contacto/>} />
+    </Routes>
+  </BrowserRouter>
   )
 }
 
