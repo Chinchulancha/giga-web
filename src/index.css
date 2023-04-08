@@ -12,7 +12,7 @@ input::-webkit-inner-spin-button {
   grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1629px) {
   .contactoDiv {
     grid-template-columns: 22% 51.7% 22%;
     grid-template-rows: none;

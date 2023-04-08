@@ -6,9 +6,9 @@ const NavBar = ({ FiPhoneCall, handleClick, clicked }) => {
 
   return (
     <>
-      <nav className="shadow-lg md:flex">
+      <nav className="hidden shadow-lg md:flex">
         <ul
-          class={`md:flex md:items-center  md:z-auto md:static absolute z-50  bg-slate-600 md:bg-slate-800 text-center md:text-start md:py-5 md:px-7 w-full left-0 md:w-auto ${
+          className={`md:flex md:items-center  md:z-auto md:static absolute z-50  bg-slate-600 md:bg-slate-800 text-center md:text-start md:py-5 md:px-7 w-full left-0 md:w-auto ${
             clicked ? "top-0" : "top-[-400px]"
           } transition-all ease-in duration-500 rounded py-12`}
         >
@@ -28,7 +28,7 @@ const NavBar = ({ FiPhoneCall, handleClick, clicked }) => {
                 location.pathname === "/"
                   ? "bg-indigo-500 hover:bg-indigo-500"
                   : "hover:bg-indigo-200"
-              } text-xl tracking-wide p-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300`}
+              } text-base ph:text-xl tracking-wide p-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300`}
             >
               Inicio
             </Link>
@@ -41,7 +41,7 @@ const NavBar = ({ FiPhoneCall, handleClick, clicked }) => {
                 location.pathname === "/proyectos"
                   ? "bg-indigo-500 hover:bg-indigo-500"
                   : "hover:bg-indigo-300"
-              } text-sm md:text-xl tracking-wide p-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300`}
+              } text-base ph:text-xl  tracking-wide p-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110  duration-300`}
             >
               Proyectos
             </Link>
@@ -54,7 +54,7 @@ const NavBar = ({ FiPhoneCall, handleClick, clicked }) => {
                 location.pathname === "/quienes-somos"
                   ? "bg-indigo-500 hover:bg-indigo-500"
                   : "hover:bg-indigo-300"
-              } text-xl tracking-wide p-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300`}
+              } text-base ph:text-xl tracking-wide p-3 rounded transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300`}
             >
               Quienes Somos
             </Link>
@@ -71,7 +71,7 @@ const NavBar = ({ FiPhoneCall, handleClick, clicked }) => {
           </li>
         </ul>
 
-        <div className="hidden md:text-lg md:ml-16 md:flex md:justify-center md:items-center md:gap-x-2">
+        <div className="hidden md:text-lg md:ml-16 ph:flex md:justify-center md:items-center md:gap-x-2">
           <FiPhoneCall className="text-3xl"></FiPhoneCall>
 
           <p href="#" className="">
