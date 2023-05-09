@@ -18,7 +18,7 @@ const ObrasCiviles = () => {
     
     <div
       data-aos="fade-up"
-      className="mt-10 font-mono text-base md:py-3 md:px-5 flex justify-center flex-col gap-y-10"
+      className="mt-10 font-sans text-base md:py-3 md:px-5 flex justify-center flex-col gap-y-10"
     >
       
       

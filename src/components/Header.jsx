@@ -11,10 +11,8 @@ import Logo from "../assets/logo.png";
 const Header = ({ FiPhoneCall }) => {
   const [clicked, setClicked] = useState(false);
 
-  const handleClick = () => {
-    if (window.innerWidth < 1000) {
+  const handleClick = () => {   
       setClicked(!clicked);
-    }
   };
 
   return (
@@ -26,7 +24,7 @@ const Header = ({ FiPhoneCall }) => {
       data-aos-offset="0"
       className="flex bar:pl-8 pt-3 md:pt-7 md:pl-0 md:pr-0 justify-around ph:justify-between items-center md:mb-20 w-full"
     >
-      <h1 className="text-5xl ">
+      <h1 className="text-5xl mr-20">
         <Link aria-label="Logo GIGA, volver a la pagina de inicio" to="/">
           <img src={Logo} alt="GIGA CONSTRUCTORA ROSARIO" />
         </Link>
@@ -34,7 +32,7 @@ const Header = ({ FiPhoneCall }) => {
 
       <button
         aria-label="Boton para dispositivos moviles, abre el menu de navegacion"
-        className="block   md:hidden"
+        className="block md:hidden"
       >
         <BiMenu className="text-5xl" onClick={handleClick}></BiMenu>
       </button>

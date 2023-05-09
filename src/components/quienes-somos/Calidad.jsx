@@ -29,7 +29,7 @@ const Calidad = () => {
         <div data-aos="zoom-in" className="w-full h-full justify-center border-r-2 hidden md:flex">
           <img className="w-72" src={Medal} alt="Medalla Experiencia GIGA" />
         </div>
-        <div data-aos="fade-up" className="font-mono text-base py-3 px-5 flex justify-between flex-col gap-y-10">
+        <div data-aos="fade-up" className="font-sans text-base py-3 px-5 flex justify-between flex-col gap-y-10">
           <h3 className="text-4xl uppercase tracking-wider text-orange-500">
             Desde 2008 haciendo lo que amamos.  
           </h3>

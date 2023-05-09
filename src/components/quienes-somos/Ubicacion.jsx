@@ -25,7 +25,7 @@ const Ubicacion = () => {
       </div>
       <div
         data-aos="fade-up"
-        className="font-mono text-base md:py-3 md:px-5 flex justify-center flex-col gap-y-20"
+        className="font-sans text-base md:py-3 md:px-5 flex justify-center flex-col gap-y-20"
       >
         <h3 className="text-4xl uppercase tracking-wider text-orange-500">
           Rosario y alrededores.
